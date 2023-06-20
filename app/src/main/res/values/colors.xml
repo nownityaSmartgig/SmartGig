@@ -3,4 +3,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="chinese_black">#141414</color>
+    <color name="lapis_lazuli">#2562AB</color>
+    <color name="philippine_gray">#8C8C8C</color>
+    <color name="red_pigment">#F5222D</color>
+
 </resources>

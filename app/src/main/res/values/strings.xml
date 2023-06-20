@@ -47,4 +47,37 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="designation_ceo_founder">CEO/Founder</string>
     <string name="user_name">Mahesh Nayani</string>
+    <string name="employee_details">Employee Details</string>
+    <string name="employee_id">Employee Id<font color="#ff5566">*</font></string>
+    <string name="enter_your_employee_id">Enter your Employee id</string>
+    <string name="full_name">Full name<font color="#ff5566">*</font></string>
+    <string name="enter_your_full_name">Enter your full name</string>
+    <string name="gender">Gender<font color="#ff5566">*</font></string>
+    <string name="gender_prompt">Select Gender</string>
+    <string name="dob">DOB<font color="#ff5566">*</font></string>
+    <string name="email_id">Email Id<font color="#ff5566">*</font></string>
+    <string name="enter_your_email_id">Enter your Email Id</string>
+    <string name="mobile_no">Mobile No<font color="#ff5566">*</font></string>
+    <string name="enter_your_mobile_number">Enter your Mobile Number</string>
+    <string name="employee_type">Employee Type<font color="#ff5566">*</font></string>
+    <string name="select_employee_type">Select employee type</string>
+    <string name="designation">Designation<font color="#ff5566">*</font></string>
+    <string name="role">Role<font color="#ff5566">*</font></string>
+    <string name="qualification">Qualification<font color="#ff5566">*</font></string>
+    <string name="primary_skills">Primary Skills<font color="#ff5566">*</font></string>
+    <string name="enter_your_seconday_skills">Enter your seconday skills</string>
+    <string name="secondary_skills">Secondary Skills<font color="#ff5566">*</font></string>
+    <string name="primary_location">Primary Location<font color="#ff5566">*</font></string>
+    <string name="current_location">Current Location<font color="#ff5566">*</font></string>
+    <string name="doj">DOJ<font color="#ff5566">*</font></string>
+    <string name="dom">DOM<font color="#ff5566">*</font></string>
+    <string name="enter_your_current_location">Enter your Current location</string>
+    <string name="last_working_day">Last Working Day<font color="#ff5566">*</font></string>
+    <string name="ctc">CTC<font color="#ff5566">*</font></string>
+    <string name="log_out">Log out</string>
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+    </string-array>
 </resources>

@@ -8,6 +8,41 @@
     </style>
 
 
+    <style name="CustomSearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <!-- Change the color of the search underline -->
+        <item name="queryBackground">@color/white</item>
+
+        <!-- Change the color of the text inside the search view -->
+        <item name="android:textColor">@color/chinese_black</item>
+
+        <!-- Change the color of the close button -->
+        <item name="closeIcon">@drawable/ic_search_view</item>
+    </style>
+    
+    <style name="TextViewAppearanceHeading">
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="android:textSize">15sp</item>
+<!--        <item name="android:layout_marginTop">18dp</item>-->
+<!--        <item name="android:layout_marginStart">38dp</item>-->
+        
+    </style>
+
+    <style name="EditTextAppearance">
+        <item name="android:fontFamily">@font/open_sans_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/chinese_black</item>
+        <item name="hintTextColor">#BF686E74</item>
+<!--        <item name="android:layout_marginTop">10dp</item>-->
+<!--        <item name="android:layout_marginStart">22dp</item>-->
+<!--        <item name="android:layout_marginEnd">22dp</item>-->
+<!--        <item name="android:paddingStart">16dp</item>-->
+<!--        <item name="android:paddingEnd">16dp</item>-->
+<!--        <item name="android:paddingTop">12dp</item>-->
+<!--        <item name="android:paddingBottom">12dp</item>-->
+
+
+    </style>
+        
 
 
 </resources>
