@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/upper_box"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="22dp"
+            android:elevation="20dp"
+            app:cardElevation="10dp"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+            
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="2dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_upload_photo_document"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:text="@string/upload_photo"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginStart="38dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/photo_upload_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="8dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginHorizontal="22dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_upload_photo_document">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="3dp"
+                            android:textSize="20sp"
+                            android:layout_alignParentStart="true"
+                            android:text="@string/default_document_name" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_upload_photo"
+                            android:layout_marginTop="10dp"
+                            android:layout_alignParentEnd="true" />
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:id="@+id/tv_upload_highschool"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/High_School"
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginStart="38dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/photo_upload_card"
+
+                    />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/highschool_upload_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="8dp"
+                    android:layout_marginHorizontal="22dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_upload_highschool">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="3dp"
+                            android:textSize="20sp"
+                            android:layout_alignParentStart="true"
+                            android:text="@string/default_document_name" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_upload_photo"
+                            android:layout_marginTop="10dp"
+                            android:layout_alignParentEnd="true" />
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:id="@+id/tv_upload_Intermediate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Intermediate"
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginStart="38dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/highschool_upload_card"
+                    />
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/Intermediate_upload_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="8dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginHorizontal="22dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_upload_Intermediate">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="3dp"
+                            android:textSize="20sp"
+                            android:layout_alignParentStart="true"
+                            android:text="@string/default_document_name" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_upload_photo"
+                            android:layout_marginTop="10dp"
+                            android:layout_alignParentEnd="true" />
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <TextView
+                    android:id="@+id/tv_upload_UG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/UG_marksheet"
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginStart="38dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/Intermediate_upload_card"
+                    />
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/UG_upload_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="8dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginHorizontal="22dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_upload_UG">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="3dp"
+                            android:textSize="20sp"
+                            android:layout_alignParentStart="true"
+                            android:text="@string/default_document_name" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_upload_photo"
+                            android:layout_marginTop="10dp"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <TextView
+                    android:id="@+id/tv_upload_PG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/PG_marksheet"
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginStart="38dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/UG_upload_card"
+                    />
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/PG_upload_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="8dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginHorizontal="22dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_upload_PG">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="3dp"
+                            android:textSize="20sp"
+                            android:layout_alignParentStart="true"
+                            android:text="@string/default_document_name" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_upload_photo"
+                            android:layout_marginTop="10dp"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <TextView
+                    android:id="@+id/tv_upload_paySlip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/company_paySlip"
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginStart="38dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/PG_upload_card"
+                    />
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/PaySlip_upload_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="8dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginHorizontal="22dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_upload_paySlip">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="3dp"
+                            android:textSize="20sp"
+                            android:layout_alignParentStart="true"
+                            android:text="@string/default_document_name" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_upload_photo"
+                            android:layout_marginTop="10dp"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <TextView
+                    android:id="@+id/tv_offerLetter_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/offer_letter_1"
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginStart="38dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/PaySlip_upload_card"
+                    />
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/offerLetter1_upload_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="8dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginHorizontal="22dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_offerLetter_1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="3dp"
+                            android:textSize="20sp"
+                            android:layout_alignParentStart="true"
+                            android:text="@string/default_document_name" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_upload_photo"
+                            android:layout_marginTop="10dp"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <TextView
+                    android:id="@+id/tv_offerLetter_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/offer_letter_2"
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginStart="38dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/offerLetter1_upload_card"
+                    />
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/offerLetter2_upload_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="8dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginHorizontal="22dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_offerLetter_2">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="3dp"
+                            android:textSize="20sp"
+                            android:layout_alignParentStart="true"
+                            android:text="@string/default_document_name" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_upload_photo"
+                            android:layout_marginTop="10dp"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <TextView
+                    android:id="@+id/tv_offerLetter_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/offer_letter_3"
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginStart="38dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/offerLetter2_upload_card"
+                    />
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/offerLetter3_upload_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_marginHorizontal="22dp"
+                    android:backgroundTint="@color/white"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_offerLetter_3">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="3dp"
+                            android:textSize="20sp"
+                            android:layout_alignParentStart="true"
+                            android:text="@string/default_document_name" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_upload_photo"
+                            android:layout_marginTop="10dp"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

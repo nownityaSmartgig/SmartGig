@@ -38,7 +38,7 @@
             <ImageView
                 android:id="@+id/ivlogo"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="108dp"
                 android:layout_marginStart="94dp"
                 android:layout_marginTop="11dp"
                 android:layout_marginEnd="94dp"
@@ -51,13 +51,12 @@
                 android:id="@+id/tvlayout1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="25sp"
+                android:textSize="20sp"
                 android:layout_marginTop="6dp"
                 android:textStyle="bold"
                 app:layout_constraintTop_toBottomOf="@id/ivlogo"
-                app:layout_constraintStart_toStartOf="@id/ivlogo"
-                app:layout_constraintEnd_toEndOf="@id/ivlogo"
-                app:layout_constraintBottom_toTopOf="@+id/tvlayout2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 android:text="Sign in to Your Account"/>
 
             <TextView
@@ -65,11 +64,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Welcome Back! Please enter your details"
-                android:textStyle="normal"
+                android:textColor="#8392AB"
+                android:textSize="14sp"
                 android:layout_marginTop="6dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                app:layout_constraintStart_toStartOf="@+id/tvlayout1"
-                app:layout_constraintEnd_toEndOf="@+id/tvlayout1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvlayout1"
                 />
 

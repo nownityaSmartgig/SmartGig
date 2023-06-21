@@ -6,6 +6,16 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="upload_photo">Upload Photo*</string>
+    <string name="High_School">X Marksheet*</string>
+    <string name="Intermediate">Xllth/Diploma Marksheet*</string>
+    <string name="UG_marksheet">UG Marksheet*</string>
+    <string name="PG_marksheet">PG Marksheet*</string>
+    <string name="company_paySlip">Company Payslip*</string>
+    <string name="offer_letter_1">Company offerletter 1*</string>
+    <string name="offer_letter_2">Company offerletter 2*</string>
+    <string name="offer_letter_3">Company offerletter 3*</string>
+    <string name="default_document_name">Select your File</string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
