@@ -75,6 +75,12 @@
     <string name="last_working_day">Last Working Day<font color="#ff5566">*</font></string>
     <string name="ctc">CTC<font color="#ff5566">*</font></string>
     <string name="log_out">Log out</string>
+    <string name="employee_id_colon">Employee Id:</string>
+    <string name="email_id_colon">Email Id:</string>
+    <string name="doj_colon">DOJ:</string>
+    <string name="designation_colon">Designation:</string>
+    <string name="work_location_colon">Work Location:</string>
+    <string name="phone_no_colon">Phone No:</string>
     <string-array name="gender_array">
         <item>Male</item>
         <item>Female</item>

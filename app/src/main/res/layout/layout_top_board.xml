@@ -64,7 +64,7 @@
                     android:layout_marginStart="20dp"
                     android:textColor="@color/chinese_black"
                     android:textSize="24sp"
-                    android:fontFamily="@font/open_sans_bold"
+                    android:fontFamily="@font/open_sans_semi_bold"
                     app:layout_constraintStart_toEndOf="@id/iv_userImage"
                     app:layout_constraintTop_toTopOf="@id/iv_userImage"
                     />

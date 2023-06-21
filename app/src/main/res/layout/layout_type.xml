@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:elevation="10dp"
-        android:background="@drawable/rectangel_round_corner"
+        android:background="@drawable/rectangel_white_bg_round_corner_black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"

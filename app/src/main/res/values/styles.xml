@@ -18,13 +18,13 @@
         <!-- Change the color of the close button -->
         <item name="closeIcon">@drawable/ic_search_view</item>
     </style>
-    
+
     <style name="TextViewAppearanceHeading">
-        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="android:fontFamily">@font/open_sans_semi_bold</item>
         <item name="android:textSize">15sp</item>
-<!--        <item name="android:layout_marginTop">18dp</item>-->
-<!--        <item name="android:layout_marginStart">38dp</item>-->
-        
+        <!--        <item name="android:layout_marginTop">18dp</item>-->
+        <!--        <item name="android:layout_marginStart">38dp</item>-->
+
     </style>
 
     <style name="EditTextAppearance">
@@ -32,17 +32,48 @@
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/chinese_black</item>
         <item name="hintTextColor">#BF686E74</item>
-<!--        <item name="android:layout_marginTop">10dp</item>-->
-<!--        <item name="android:layout_marginStart">22dp</item>-->
-<!--        <item name="android:layout_marginEnd">22dp</item>-->
-<!--        <item name="android:paddingStart">16dp</item>-->
-<!--        <item name="android:paddingEnd">16dp</item>-->
-<!--        <item name="android:paddingTop">12dp</item>-->
-<!--        <item name="android:paddingBottom">12dp</item>-->
-
-
+        <!--        <item name="android:layout_marginTop">10dp</item>-->
+        <!--        <item name="android:layout_marginStart">22dp</item>-->
+        <!--        <item name="android:layout_marginEnd">22dp</item>-->
+        <!--        <item name="android:paddingStart">16dp</item>-->
+        <!--        <item name="android:paddingEnd">16dp</item>-->
+        <!--        <item name="android:paddingTop">12dp</item>-->
+        <!--        <item name="android:paddingBottom">12dp</item>-->
     </style>
-        
+
+    <style name="TextViewAppearanceRecyclerView">
+        <item name="android:textSize">15sp</item>
+        <item name="fontFamily">@font/open_sans_semi_bold</item>
+        <item name="android:letterSpacing">-0.044</item>
+    </style>
+
+    <style name="TextViewAppearanceRecyclerViewHeading">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/open_sans_semi_bold</item>
+        <item name="android:letterSpacing">-0.039</item>
+        <item name="android:textColor">@color/slate_gray</item>
+    </style>
+
+    <style name="TextViewAppearanceRecyclerViewDetail">
+        <item name="android:textSize">13sp</item>
+        <item name="fontFamily">@font/open_sans_semi_bold</item>
+        <item name="android:letterSpacing">-0.039</item>
+        <item name="android:textColor">@color/black2</item>
+    </style>
+
+    <style name="TextViewAdminAccessGroup">
+        <item name="android:textColor">@color/gunmetal</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="android:letterSpacing">-0.044</item>
+    </style>
+
+    <style name="TextViewAdminAccessA">
+        <item name="android:textColor">@color/gunmetal</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="android:letterSpacing">-0.044</item>
+    </style>
 
 
 </resources>
