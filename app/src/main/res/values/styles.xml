@@ -22,6 +22,8 @@
     <style name="TextViewAppearanceHeading">
         <item name="android:fontFamily">@font/open_sans_semi_bold</item>
         <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/black2</item>
+
         <!--        <item name="android:layout_marginTop">18dp</item>-->
         <!--        <item name="android:layout_marginStart">38dp</item>-->
 
@@ -68,11 +70,16 @@
         <item name="android:letterSpacing">-0.044</item>
     </style>
 
-    <style name="TextViewAdminAccessA">
-        <item name="android:textColor">@color/gunmetal</item>
+    <style name="TextViewAdminAccessHeading">
+        <item name="android:fontFamily">@font/open_sans_semi_bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/black2</item>
+    </style>
+
+    <style name="TextViewRadioButton">
         <item name="android:textSize">14sp</item>
-        <item name="android:fontFamily">@font/open_sans_bold</item>
-        <item name="android:letterSpacing">-0.044</item>
+        <item name="fontFamily">@font/open_sans_semi_bold</item>
+        <item name="android:textColor">@color/black2</item>
     </style>
 
 

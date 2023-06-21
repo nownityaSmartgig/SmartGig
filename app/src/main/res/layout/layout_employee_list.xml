@@ -21,30 +21,29 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginHorizontal="30dp"
-            android:elevation="20dp"
-            app:cardElevation="10dp"
             android:layout_marginTop="10dp"
+            android:elevation="20dp"
             app:cardBackgroundColor="@color/white"
-            app:layout_constraintStart_toStartOf="parent"
+            app:cardElevation="10dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/layout_layoutType"
-            >
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_layoutType">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingTop="2dp"
-                >
+                android:paddingTop="2dp">
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rv_downloadData"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    tools:listitem="@layout/rv_layout_download_data"
-                    tools:itemCount="14"
-                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
+                    tools:itemCount="14"
+                    app:layoutManager="LinearLayoutManager"
+                    tools:listitem="@layout/rv_layout_download_data"
 
                     />
 
@@ -53,41 +52,40 @@
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     android:layout_marginEnd="5dp"
-                    android:enabled="false"
                     android:background="@drawable/button_left_lavendar"
-                    app:layout_constraintTop_toTopOf="@id/bt_right"
+                    android:enabled="false"
                     app:layout_constraintBottom_toBottomOf="@id/bt_right"
                     app:layout_constraintEnd_toStartOf="@id/bt_right"
-                    />
+                    app:layout_constraintTop_toTopOf="@id/bt_right" />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/bt_right"
                     android:layout_width="32dp"
                     android:layout_height="32dp"
-                    android:layout_marginEnd="15dp"
                     android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
                     android:background="@drawable/button_right_lavendar"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/rv_downloadData" />
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/bt_next"
+                    android:id="@+id/bt_delete"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="6dp"
                     android:layout_marginStart="22dp"
+                    android:layout_marginTop="59dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginBottom="23dp"
                     android:background="@drawable/button_blue_bg"
                     android:fontFamily="@font/open_sans_bold"
-                    android:textSize="14sp"
-                    android:text="Next"
-                    android:textColor="@color/white"
-                    android:layout_marginTop="59dp"
+                    android:text="@string/delete"
                     android:textAllCaps="false"
-                    android:layout_marginBottom="23dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/rv_downloadData"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@id/bt_cancel"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rv_downloadData"
 
                     />
 
@@ -99,14 +97,14 @@
                     android:layout_marginEnd="22dp"
                     android:background="@drawable/button_white_bg_red_corner"
                     android:fontFamily="@font/open_sans_bold"
-                    android:textSize="14sp"
-                    android:text="Cancel"
-                    android:textColor="@color/chinese_black"
+                    android:text="@string/cancel"
                     android:textAllCaps="false"
-                    app:layout_constraintStart_toEndOf="@id/bt_next"
-                    app:layout_constraintTop_toTopOf="@id/bt_next"
-                    app:layout_constraintBottom_toBottomOf="@id/bt_next"
+                    android:textColor="@color/chinese_black"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/bt_delete"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/bt_delete"
+                    app:layout_constraintTop_toTopOf="@id/bt_delete"
 
                     />
 

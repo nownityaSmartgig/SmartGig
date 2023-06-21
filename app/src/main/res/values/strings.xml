@@ -86,4 +86,28 @@
         <item>Female</item>
         <item>Others</item>
     </string-array>
+    <string name="title_activity_super_admin">SuperAdminActivity</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="employee_name">Employee Name<font color="#ff5566">*</font></string>
+    <string name="search_and_select_employee">Search and select employee</string>
+    <string name="admin">Admin</string>
+    <string name="super_admin">Super Admin</string>
+    <string name="status_colon">Status:</string>
+    <string name="role_colon">Role:</string>
+    <string name="add_client">Add Client</string>
+    <string name="client_name">Client Name<font color="#ff5566">*</font></string>
+    <string name="client_location">Client Location<font color="#ff5566">*</font></string>
+    <string name="enter_client_name">Enter Client Name</string>
+    <string name="enter_client_location">Enter Client Location</string>
+    <string name="assign_role">Assign Role</string>
+    <string name="employee_name_plain">Employee Name</string>
+    <string name="dms">DMS</string>
+    <string name="project_name_colon">Project Name:</string>
+    <string name="client_name_colon">Client Name:</string>
+    <string name="infionic">Infionic</string>
+    <string name="start_date_colon">Start Date:</string>
+    <string name="on_going">On Going</string>
+    <string name="date_1">01-09-2022</string>
+    <string name="client_details">Client Details</string>
 </resources>
