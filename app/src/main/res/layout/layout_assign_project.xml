@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_assign_project"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top"
+                    android:letterSpacing="0.03"
+                    android:text="Assign Project"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_employee_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_marginStart="38dp"
+                    android:layout_marginTop="23dp"
+                    android:text="Employee Name"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_assign_project" />
+                <SearchView
+                    android:id="@+id/searchView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="22dp"
+                    android:background="@drawable/edit_text_outline_round_corner"
+                    android:iconifiedByDefault="false"
+                    android:queryHint="Search and Select Employee"
+                    app:layout_constraintTop_toBottomOf="@id/tv_employee_name"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+
+                <TextView
+                    android:id="@+id/tv_project_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_marginStart="38dp"
+                    android:layout_marginTop="23dp"
+                    android:text="Project Name"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/searchView" />
+
+                <Spinner
+                    android:id="@+id/sp_project_name"
+                    style="@style/EditTextAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="22dp"
+                    android:background="@drawable/custom_spinner"
+                    android:layout_marginTop="10dp"
+                    android:outlineProvider="bounds"
+                    android:paddingVertical="12dp"
+                    android:paddingStart="6dp"
+                    android:spinnerMode="dropdown"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_project_name"
+                    tools:ignore=",Autofill,RtlSymmetry" />
+                <TextView
+                    android:id="@+id/tv_onboarding_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_marginStart="38dp"
+                    android:layout_marginTop="23dp"
+                    android:text="Onboarding Date"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/sp_project_name" />
+
+                <EditText
+                    android:id="@+id/et_onboardingDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="22dp"
+                    android:hint="dd-mm-yyyy"
+                    android:layout_marginTop="10dp"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="12dp"
+                    android:drawableEnd="@drawable/ic_calendar"
+                    android:background="@drawable/edit_text_outline_round_corner"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_onboarding_date"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bt_assign"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginStart="22dp"
+                    android:background="@drawable/button_blue_bg"
+                    android:textSize="14sp"
+                    android:text="Assign"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="23dp"
+                    android:textAllCaps="false"
+                    android:layout_marginBottom="23dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/et_onboardingDate"
+                    app:layout_constraintEnd_toStartOf="@id/bt_reset"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bt_reset"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="22dp"
+                    android:background="@drawable/button_white_bg_red_corner"
+                    android:textSize="14sp"
+                    android:text="Reset"
+                    android:textColor="@color/chinese_black"
+                    android:textAllCaps="false"
+                    app:layout_constraintStart_toEndOf="@id/bt_assign"
+                    app:layout_constraintTop_toTopOf="@id/bt_assign"
+                    app:layout_constraintBottom_toBottomOf="@id/bt_assign"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#F0F0F0"
+                    android:layout_marginHorizontal="22dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/bt_assign"
+                    android:layout_marginTop="12dp"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    tools:listitem="@layout/rv_layout_employees"
+                    tools:itemCount="4"
+                    android:orientation="vertical"
+                    app:layoutManager="LinearLayoutManager"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/view1"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

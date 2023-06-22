@@ -6,4 +6,7 @@
     </style>
 
     <style name="Theme.SmartGig" parent="Base.Theme.SmartGig" />
+    <style name="Theme.SmartGig.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.SmartGig.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
