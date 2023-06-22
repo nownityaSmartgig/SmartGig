@@ -6,16 +6,21 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
-    <string name="upload_photo">Upload Photo*</string>
-    <string name="High_School">X Marksheet*</string>
-    <string name="Intermediate">Xllth/Diploma Marksheet*</string>
-    <string name="UG_marksheet">UG Marksheet*</string>
-    <string name="PG_marksheet">PG Marksheet*</string>
-    <string name="company_paySlip">Company Payslip*</string>
-    <string name="offer_letter_1">Company offerletter 1*</string>
-    <string name="offer_letter_2">Company offerletter 2*</string>
-    <string name="offer_letter_3">Company offerletter 3*</string>
+
+<!--    string used for Uploading Document Section-->
+
+    <string name="upload_photo">Upload Photo<font color="#ff5566">*</font></string>
+    <string name="High_School">X Marksheet<font color="#ff5566">*</font></string>
+    <string name="Intermediate">Xllth/Diploma Marksheet<font color="#ff5566">*</font></string>
+    <string name="UG_marksheet">UG Marksheet<font color="#ff5566">*</font></string>
+    <string name="PG_marksheet">PG Marksheet<font color="#ff5566">*</font></string>
+    <string name="company_paySlip">Company Payslip<font color="#ff5566">*</font></string>
+    <string name="offer_letter_1">Company offerletter 1<font color="#ff5566">*</font></string>
+    <string name="offer_letter_2">Company offerletter 2<font color="#ff5566">*</font></string>
+    <string name="offer_letter_3">Company offerletter 3<font color="#ff5566">*</font></string>
     <string name="default_document_name">Select your File</string>
+    <string name="employee_name_plain">EmployeeName 1</string>
+    <string name="project_name">DMS</string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
@@ -53,4 +58,10 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+
+    <string name="project_name_colon">Project Name:</string>
+    <string name="client_name_colon">Client Name:</string>
+    <string name="start_date_colon">Start Date:</string>
+    <string name="status_colon">Status:</string>
+    <string name="log_out">Log out</string>
 </resources>
