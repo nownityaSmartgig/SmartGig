@@ -12,7 +12,12 @@
         <include
             android:id="@+id/layout_layoutType"
             layout="@layout/layout_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
             android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
 
             />
@@ -38,11 +43,11 @@
                     android:id="@+id/rv_downloadData"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:layoutManager="LinearLayoutManager"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:itemCount="14"
-                    app:layoutManager="LinearLayoutManager"
                     tools:listitem="@layout/rv_layout_download_data"
 
                     />

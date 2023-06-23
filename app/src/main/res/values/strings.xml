@@ -53,7 +53,7 @@
     <string name="full_name">Full name<font color="#ff5566">*</font></string>
     <string name="enter_your_full_name">Enter your full name</string>
     <string name="gender">Gender<font color="#ff5566">*</font></string>
-    <string name="gender_prompt">Select Gender</string>
+
     <string name="dob">DOB<font color="#ff5566">*</font></string>
     <string name="email_id">Email Id<font color="#ff5566">*</font></string>
     <string name="enter_your_email_id">Enter your Email Id</string>
@@ -81,6 +81,7 @@
     <string name="designation_colon">Designation:</string>
     <string name="work_location_colon">Work Location:</string>
     <string name="phone_no_colon">Phone No:</string>
+    <string name="gender_prompt">Select Gender</string>
     <string-array name="gender_array">
         <item>Male</item>
         <item>Female</item>
@@ -108,6 +109,45 @@
     <string name="infionic">Infionic</string>
     <string name="start_date_colon">Start Date:</string>
     <string name="on_going">On Going</string>
-    <string name="date_1">01-09-2022</string>
+    <string name="date_1">01–09–2022</string>
     <string name="client_details">Client Details</string>
+    <string name="client_name_plain">Client Name</string>
+    <string name="location_colon">Location:</string>
+    <string name="bangalore">Bangalore</string>
+    <string name="active">Active</string>
+    <string name="add_project">Add Project</string>
+    <string name="project_name">Project Name<font color="#ff5566">*</font></string>
+    <string name="enter_project_name">Enter Project Name</string>
+    <string name="project_details">Project Details<font color="#ff5566">*</font></string>
+    <string name="enter_project_details">Enter project details</string>
+    <string name="project_status">Project Status<font color="#ff5566">*</font></string>
+    <string name="select_client">Select Client<font color="#ff5566">*</font></string>
+    <string name="project_details_plain">Project Details</string>
+    <string name="project_description_colon">Project Description:</string>
+    <string name="dummy_text">Lorem ipsum dolorsita.....</string>
+    <string name="in_progress">In Progress</string>
+    <string name="project_name_plain">Project Name</string>
+    <string name="salary">Salary</string>
+    <string name="client">Client</string>
+    <string name="download_data">Download Data</string>
+
+    <string name="project">Project</string>
+    <string name="admin_access_popup">Admin Access</string>
+    <string name="add_employee_popup">Add Employee</string>
+    <string name="add_client_popup">Add Client</string>
+    <string name="add_client_project_popup">Add Client-Project</string>
+    <string name="employee_list_popup">Employee List</string>
+    <string name="pie_chart_popup">Pie Chart</string>
+    <string name="view"><u>View</u></string>
+    <string name="january">January</string>
+    <string name="reset">Reset</string>
+    <string name="assign">Assign</string>
+    <string name="top_logo">top_logo</string>
+    <string name="date_format">dd-mm-yyyy</string>
+    <string name="zero">0</string>
+    <string name="emp_id">SG1201</string>
+    <string name="software_consultant">Software Consultant</string>
+    <string name="email_smartgig">xyz@smartgig.tech</string>
+    <string name="project_manager">Project Manager</string>
+    <string name="phone_number">+91 9876543210</string>
 </resources>

@@ -73,14 +73,14 @@
             android:id="@+id/cl_bottomLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:visibility="visible">
+            android:visibility="gone">
 
             <TextView
                 android:id="@+id/tv_emailIdHeading"
                 style="@style/TextViewAppearanceRecyclerViewHeading"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="22dp"
+                android:layout_marginStart="24dp"
                 android:layout_marginTop="13dp"
                 android:text="@string/email_id_colon"
                 app:layout_constraintStart_toStartOf="parent"
@@ -92,7 +92,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="100dp"
-                android:text="xyz@smartgig.tech"
+                android:text="@string/email_smartgig"
                 android:layout_marginEnd="40dp"
                 android:ellipsize="end"
                 android:maxLines="1"

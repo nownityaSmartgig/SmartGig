@@ -75,14 +75,14 @@
             android:id="@+id/cl_bottomLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:visibility="visible">
+            android:visibility="gone">
 
             <TextView
                 android:id="@+id/tv_projectNameHeading"
                 style="@style/TextViewAppearanceRecyclerViewHeading"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="22dp"
+                android:layout_marginStart="24dp"
                 android:layout_marginTop="13dp"
                 android:text="@string/project_name_colon"
                 app:layout_constraintStart_toStartOf="parent"

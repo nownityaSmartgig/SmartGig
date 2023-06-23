@@ -16,7 +16,9 @@
             android:name=".ui.activities.super_admin.SuperAdminActivity"
             android:exported="true"
             android:label="@string/title_activity_super_admin"
-            android:theme="@style/Theme.SmartGig" >
+            android:theme="@style/Theme.SmartGig"
+            android:screenOrientation="fullSensor"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

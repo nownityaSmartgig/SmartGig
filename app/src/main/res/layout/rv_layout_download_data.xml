@@ -53,7 +53,7 @@
                 android:layout_width="0dp"
                 style="@style/TextViewAppearanceRecyclerView"
                 android:layout_height="wrap_content"
-                android:text="Software Consultant"
+                android:text="@string/software_consultant"
                 android:maxLines="1"
                 android:ellipsize="end"
                 android:visibility="visible"
@@ -110,14 +110,14 @@
             android:id="@+id/cl_bottomLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:visibility="visible">
+            android:visibility="gone">
 
             <TextView
                 android:id="@+id/tv_employeeIdHeading"
                 style="@style/TextViewAppearanceRecyclerViewHeading"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="22dp"
+                android:layout_marginStart="24dp"
                 android:layout_marginTop="13dp"
                 android:text="@string/employee_id_colon"
                 app:layout_constraintStart_toStartOf="parent"
@@ -129,7 +129,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="100dp"
-                android:text="SG1201"
+                android:text="@string/emp_id"
                 app:layout_constraintBottom_toBottomOf="@id/tv_employeeIdHeading"
                 app:layout_constraintStart_toEndOf="@id/tv_employeeIdHeading"
                 app:layout_constraintTop_toTopOf="@id/tv_employeeIdHeading" />
@@ -154,7 +154,7 @@
                 android:layout_marginEnd="40dp"
                 android:ellipsize="end"
                 android:maxLines="1"
-                android:text="xyz@smartgig.tech"
+                android:text="@string/email_smartgig"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@id/tv_employeeIdDetail"
                 app:layout_constraintTop_toBottomOf="@id/tv_employeeIdDetail" />
@@ -178,7 +178,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="40dp"
                 android:ellipsize="end"
-                android:text="12-12-2022"
+                android:text="@string/date_format"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@id/tv_emailIdDetail"
                 app:layout_constraintTop_toBottomOf="@id/tv_emailIdDetail" />
@@ -202,7 +202,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="40dp"
                 android:ellipsize="end"
-                android:text="Project Manager"
+                android:text="@string/project_manager"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@id/tv_dojDetail"
                 app:layout_constraintTop_toBottomOf="@id/tv_dojDetail" />
@@ -226,7 +226,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="40dp"
                 android:ellipsize="end"
-                android:text="Bangalore"
+                android:text="@string/bangalore"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@id/tv_designationDetail"
                 app:layout_constraintTop_toBottomOf="@id/tv_designationDetail" />
@@ -253,7 +253,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="40dp"
                 android:ellipsize="end"
-                android:text="+91 9876543210"
+                android:text="@string/phone_number"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@id/tv_workLocationDetail"
                 app:layout_constraintTop_toBottomOf="@id/tv_workLocationDetail" />

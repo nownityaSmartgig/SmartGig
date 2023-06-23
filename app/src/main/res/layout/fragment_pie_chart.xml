@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragments.AddClientFragment">
+    tools:context=".ui.fragments.PieChartFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -32,16 +32,15 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-
+                android:layout_marginTop="29dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/layout_topBoard">
 
                 <include
-                    android:id="@+id/layout_addClient"
-                    layout="@layout/layout_add_client"
+                    android:id="@+id/layout_pieChart"
+                    layout="@layout/layout_piechart"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -54,7 +53,7 @@
                     android:layout_height="1dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/layout_addClient" />
+                    app:layout_constraintTop_toBottomOf="@id/layout_pieChart" />
 
 
                 <androidx.constraintlayout.widget.ConstraintLayout

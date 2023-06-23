@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/popup_AdminAccess"
+        android:title="@string/admin_access_popup" />
+    <item
+        android:id="@+id/popup_addEmployee"
+        android:title="@string/add_employee_popup" />
+    <item
+        android:id="@+id/popup_addClient"
+        android:title="@string/add_client_popup" />
+    <item
+        android:id="@+id/popup_addClientProject"
+        android:title="@string/add_client_project_popup" />
+    <item
+        android:id="@+id/popup_employeeList"
+        android:title="@string/employee_list_popup" />
+    <item
+        android:id="@+id/popup_pieChart"
+        android:title="@string/pie_chart_popup" />
+</menu>

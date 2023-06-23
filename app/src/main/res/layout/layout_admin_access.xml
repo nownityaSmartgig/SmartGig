@@ -11,6 +11,7 @@
 
         >
 
+
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -93,6 +94,7 @@
                         android:id="@+id/rb_admin"
                         style="@style/TextViewRadioButton"
                         android:layout_width="wrap_content"
+                        android:checked="true"
                         android:layout_height="wrap_content"
                         android:buttonTint="@color/black2"
                         android:text="@string/admin" />
@@ -101,6 +103,7 @@
                         android:id="@+id/rb_superAdmin"
                         style="@style/TextViewRadioButton"
                         android:layout_width="wrap_content"
+                        android:checked="false"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:buttonTint="@color/black2"
@@ -115,7 +118,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_blue_bg"
                     android:fontFamily="@font/open_sans_bold"
-                    android:text="Assign"
+                    android:text="@string/assign"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
                     android:textSize="14sp"

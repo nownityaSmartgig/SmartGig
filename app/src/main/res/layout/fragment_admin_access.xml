@@ -10,6 +10,20 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+<!--        <Button-->
+<!--            android:id="@+id/"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Ckick"-->
+<!--            app:layout_constraintStart_toStartOf="parent" -->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            android:elevation="100dp"-->
+<!--            />-->
+
+
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/view1"
             android:layout_width="match_parent"
@@ -40,7 +54,7 @@
                 app:layout_constraintTop_toBottomOf="@id/layout_topBoard">
 
                 <include
-                    android:id="@+id/layout_addEmployee"
+                    android:id="@+id/layout_adminAccess"
                     layout="@layout/layout_admin_access"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -54,7 +68,7 @@
                     android:layout_height="1dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/layout_addEmployee" />
+                    app:layout_constraintTop_toBottomOf="@id/layout_adminAccess" />
 
 
                 <androidx.constraintlayout.widget.ConstraintLayout

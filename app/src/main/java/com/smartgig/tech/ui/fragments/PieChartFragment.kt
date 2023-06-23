@@ -1,57 +1,61 @@
 package com.smartgig.tech.ui.fragments
 
+import android.graphics.Color.parseColor
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import android.widget.PopupMenu
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.smartgig.tech.R
-import com.smartgig.tech.databinding.FragmentAdminAccessBinding
+import com.smartgig.tech.databinding.FragmentPieChartBinding
+import org.eazegraph.lib.models.PieModel
 
-class AdminAccessFragment : Fragment() {
 
-    private lateinit var binding: FragmentAdminAccessBinding
+class PieChartFragment : Fragment() {
+
+    private lateinit var binding:FragmentPieChartBinding
 
     override fun onCreateView(
         inflater: LayoutInflater , container: ViewGroup? ,
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        binding = FragmentAdminAccessBinding.inflate(inflater, container, false)
+        binding = FragmentPieChartBinding.inflate(inflater , container , false)
+
         return binding.root
     }
 
     override fun onViewCreated(view: View , savedInstanceState: Bundle?) {
         super.onViewCreated(view , savedInstanceState)
+        val pieChart1 = binding.layoutPieChart.pcPieChart1
+        val pieChart2 =binding.layoutPieChart.pcPieChart2
 
-
-
-        binding.layoutTopBoard.ivUserImage.setOnClickListener {
-            Toast.makeText(requireContext() , "Clicked!" , Toast.LENGTH_SHORT).show()
+        pieChart1.apply {
+            addPieSlice(PieModel("Kotlin" , 25f , parseColor("#B125EA")))
+            addPieSlice(PieModel("Java" , 15f , parseColor("#F14C4D")))
+            addPieSlice(PieModel("Python" , 20f ,parseColor("#306998")))
+            addPieSlice(PieModel("Ruby" , 40f , parseColor("#CC0000")))
 
         }
 
+        pieChart1.startAnimation()
+
+        pieChart2.apply {
+            addPieSlice(PieModel("Kotlin" , 25f , parseColor("#B125EA")))
+            addPieSlice(PieModel("Java" , 15f , parseColor("#F14C4D")))
+            addPieSlice(PieModel("Python" , 20f ,parseColor("#306998")))
+            addPieSlice(PieModel("Ruby" , 40f , parseColor("#CC0000")))
+        }
+
+        pieChart2.startAnimation()
         val popupButton = binding.layoutTopBoard.ivDownCaret
 
         popupButton.setOnClickListener {
-            Toast.makeText(requireContext() , "Clicked!" , Toast.LENGTH_SHORT).show()
             showPopupMenu(it)
-
         }
-
-        binding.layoutLogoutButton.clLogout.setOnClickListener {
-            Toast.makeText(requireContext() , "Clicked!" , Toast.LENGTH_SHORT).show()
-        }
-
-//        binding.bt.setOnClickListener {
-//            Toast.makeText(requireContext(), "Clicked!" , Toast.LENGTH_SHORT).show()
-////            val snackbar = Snackbar.make(requireView() , "CLicked!" , Snackbar.LENGTH_SHORT)
-////            snackbar.show()
-//        }
 
     }
 
@@ -71,35 +75,32 @@ class AdminAccessFragment : Fragment() {
 
         when (menuItem.itemId) {
             R.id.popup_AdminAccess -> {
-
+                val action =
+                    PieChartFragmentDirections.actionPieChartFragmentToAdminAccessFragment()
+                findNavController().navigate(action)
             }
             R.id.popup_addEmployee -> {
                 val action =
-                    AdminAccessFragmentDirections.actionAdminAccessFragmentToAddEmployeeFragment()
+                    PieChartFragmentDirections.actionPieChartFragmentToAddEmployeeFragment()
                 findNavController().navigate(action)
             }
             R.id.popup_addClient -> {
                 val action =
-                    AdminAccessFragmentDirections.actionAdminAccessFragmentToAddClientFragment()
+                    PieChartFragmentDirections.actionPieChartFragmentToAddClientFragment()
                 findNavController().navigate(action)
             }
             R.id.popup_addClientProject -> {
                 val action =
-                    AdminAccessFragmentDirections.actionAdminAccessFragmentToAddClientProjectFragment()
+                    PieChartFragmentDirections.actionPieChartFragmentToAddClientProjectFragment()
                 findNavController().navigate(action)
             }
             R.id.popup_employeeList -> {
                 val action =
-                    AdminAccessFragmentDirections.actionAdminAccessFragmentToEmployeeListFragment()
+                    PieChartFragmentDirections.actionPieChartFragmentToEmployeeListFragment()
                 findNavController().navigate(action)
             }
             R.id.popup_pieChart -> {
-                val action =
-                    AdminAccessFragmentDirections.actionAdminAccessFragmentToPieChartFragment()
-                findNavController().navigate(action)
             }
         }
     }
-
-
 }

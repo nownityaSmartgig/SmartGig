@@ -10,48 +10,35 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.smartgig.tech.R
-import com.smartgig.tech.databinding.FragmentAdminAccessBinding
+import com.smartgig.tech.databinding.FragmentAddClientProjectBinding
 
-class AdminAccessFragment : Fragment() {
 
-    private lateinit var binding: FragmentAdminAccessBinding
+class AddClientProjectFragment : Fragment() {
+
+    private lateinit var binding: FragmentAddClientProjectBinding
 
     override fun onCreateView(
         inflater: LayoutInflater , container: ViewGroup? ,
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        binding = FragmentAdminAccessBinding.inflate(inflater, container, false)
+        binding = FragmentAddClientProjectBinding.inflate(inflater , container , false)
+
         return binding.root
     }
 
     override fun onViewCreated(view: View , savedInstanceState: Bundle?) {
         super.onViewCreated(view , savedInstanceState)
 
-
-
-        binding.layoutTopBoard.ivUserImage.setOnClickListener {
-            Toast.makeText(requireContext() , "Clicked!" , Toast.LENGTH_SHORT).show()
-
-        }
+        binding.layoutAddClientProject.layoutLayoutType.tvScreenTypeHeading.text = R.string.project.toString()
+        binding.layoutAddClientProject.layoutLayoutType.sivScreenTypeLogo.setImageResource(R.drawable.ic_download)
 
         val popupButton = binding.layoutTopBoard.ivDownCaret
 
         popupButton.setOnClickListener {
-            Toast.makeText(requireContext() , "Clicked!" , Toast.LENGTH_SHORT).show()
             showPopupMenu(it)
-
+            Toast.makeText(requireContext() , "Clicked" , Toast.LENGTH_SHORT).show()
         }
-
-        binding.layoutLogoutButton.clLogout.setOnClickListener {
-            Toast.makeText(requireContext() , "Clicked!" , Toast.LENGTH_SHORT).show()
-        }
-
-//        binding.bt.setOnClickListener {
-//            Toast.makeText(requireContext(), "Clicked!" , Toast.LENGTH_SHORT).show()
-////            val snackbar = Snackbar.make(requireView() , "CLicked!" , Snackbar.LENGTH_SHORT)
-////            snackbar.show()
-//        }
 
     }
 
@@ -71,31 +58,31 @@ class AdminAccessFragment : Fragment() {
 
         when (menuItem.itemId) {
             R.id.popup_AdminAccess -> {
+                val action =
+                    AddClientProjectFragmentDirections.actionAddClientProjectFragmentToAdminAccessFragment()
+                findNavController().navigate(action)
 
             }
             R.id.popup_addEmployee -> {
                 val action =
-                    AdminAccessFragmentDirections.actionAdminAccessFragmentToAddEmployeeFragment()
+                    AddClientProjectFragmentDirections.actionAddClientProjectFragmentToAddEmployeeFragment()
                 findNavController().navigate(action)
             }
             R.id.popup_addClient -> {
                 val action =
-                    AdminAccessFragmentDirections.actionAdminAccessFragmentToAddClientFragment()
+                    AddClientProjectFragmentDirections.actionAddClientProjectFragmentToAddClientFragment()
                 findNavController().navigate(action)
             }
             R.id.popup_addClientProject -> {
-                val action =
-                    AdminAccessFragmentDirections.actionAdminAccessFragmentToAddClientProjectFragment()
-                findNavController().navigate(action)
             }
             R.id.popup_employeeList -> {
                 val action =
-                    AdminAccessFragmentDirections.actionAdminAccessFragmentToEmployeeListFragment()
+                    AddClientProjectFragmentDirections.actionAddClientProjectFragmentToEmployeeListFragment()
                 findNavController().navigate(action)
             }
             R.id.popup_pieChart -> {
                 val action =
-                    AdminAccessFragmentDirections.actionAdminAccessFragmentToPieChartFragment()
+                    AddClientProjectFragmentDirections.actionAddClientProjectFragmentToPieChartFragment()
                 findNavController().navigate(action)
             }
         }
