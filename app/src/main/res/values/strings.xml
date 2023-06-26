@@ -7,7 +7,7 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-<!--    string for topBoard-->
+    <!--    string for topBoard-->
 
     <string name="user_name">Mahesh Nayani</string>
     <string name="designation_ceo_founder">CEO/Founder</string>
@@ -73,12 +73,12 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-<!--    string for Apply Leave-->
+    <!--    string for Apply Leave-->
     <string name="app_leave_headline">Apply Leave</string>
     <string name="used_leave">Used Leave</string>
     <string name="used_unpaid_leave_colon">Unpaid:</string>
     <string name="used_paid_leave_colon">Paid:</string>
-    <string name="available_leave">Availabe Leave</string>
+    <string name="available_leave">Available Leave</string>
     <string name="available_unpaid_leave_colon">Unpaid:</string>
     <string name="available_paid_leave_colon">Paid:</string>
     <string name="enter_leave_subject">Enter Leave Subject</string>
@@ -86,9 +86,9 @@
     <string name="to_date">To Date<font color="#ff5566">*</font></string>
     <string name="unpaid">Unpaid</string>
     <string name="paid">Paid</string>
-    
-<!--    string leave request-->
-    
+
+    <!--    string leave request-->
+
     <string name="leave_subject">Leave Subject</string>
     <string name="status">Pending</string>
     <string name="no_of_days_colon">No of Days:</string>
