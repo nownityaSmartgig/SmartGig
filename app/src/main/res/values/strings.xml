@@ -7,8 +7,14 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-<!--    string used for Uploading Document Section-->
+<!--    string for topBoard-->
 
+    <string name="user_name">Mahesh Nayani</string>
+    <string name="designation_ceo_founder">CEO/Founder</string>
+
+    <!--    string used for Uploading Document Section-->
+
+    <string name="upload_documents">Documents</string>
     <string name="upload_photo">Upload Photo<font color="#ff5566">*</font></string>
     <string name="High_School">X Marksheet<font color="#ff5566">*</font></string>
     <string name="Intermediate">Xllth/Diploma Marksheet<font color="#ff5566">*</font></string>
@@ -64,4 +70,34 @@
     <string name="start_date_colon">Start Date:</string>
     <string name="status_colon">Status:</string>
     <string name="log_out">Log out</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+<!--    string for Apply Leave-->
+    <string name="app_leave_headline">Apply Leave</string>
+    <string name="used_leave">Used Leave</string>
+    <string name="used_unpaid_leave_colon">Unpaid:</string>
+    <string name="used_paid_leave_colon">Paid:</string>
+    <string name="available_leave">Availabe Leave</string>
+    <string name="available_unpaid_leave_colon">Unpaid:</string>
+    <string name="available_paid_leave_colon">Paid:</string>
+    <string name="enter_leave_subject">Enter Leave Subject</string>
+    <string name="from_date">From Date<font color="#ff5566">*</font></string>
+    <string name="to_date">To Date<font color="#ff5566">*</font></string>
+    <string name="unpaid">Unpaid</string>
+    <string name="paid">Paid</string>
+    
+<!--    string leave request-->
+    
+    <string name="leave_subject">Leave Subject</string>
+    <string name="status">Pending</string>
+    <string name="no_of_days_colon">No of Days:</string>
+    <string name="from_date_colon">From Date:</string>
+    <string name="to_date_colon">To Date:</string>
+    <string name="to_date_details">30 Nov 2022</string>
+    <string name="paid_unpaid_heading">Paid/Unpaid:</string>
+    <string name="paid_unpaid_details">Paid</string>
+    <string name="status_details">Pending</string>
+    <string name="leave_request_type">Leave Request</string>
+
 </resources>

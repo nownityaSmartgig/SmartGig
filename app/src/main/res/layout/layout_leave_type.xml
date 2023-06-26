@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cl_screenType"
         android:layout_width="wrap_content"
@@ -25,7 +26,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginStart="5dp"
-            android:src="@drawable/ic_upload_documets"
+            android:src="@drawable/ic_leave_calender"
 
             />
 
@@ -33,7 +34,7 @@
             android:id="@+id/tv_screenTypeHeading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/upload_documents"
+            android:text="@string/leave_request_type"
             android:layout_marginHorizontal="8dp"
             app:layout_constraintStart_toEndOf="@id/siv_screenTypeLogo"
             app:layout_constraintTop_toTopOf="parent"
