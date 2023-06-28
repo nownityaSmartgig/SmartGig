@@ -14,6 +14,8 @@
 
     <!--    string used for Uploading Document Section-->
 
+    <string name="select_file">Select your file</string>
+
     <string name="upload_documents">Documents</string>
     <string name="upload_photo">Upload Photo<font color="#ff5566">*</font></string>
     <string name="High_School">X Marksheet<font color="#ff5566">*</font></string>
