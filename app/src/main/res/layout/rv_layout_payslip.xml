@@ -33,7 +33,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/tv_roleDetailTop"
+            android:id="@+id/tv_view"
             style="@style/TextViewAppearanceRecyclerView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

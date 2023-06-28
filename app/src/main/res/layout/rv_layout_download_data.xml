@@ -8,7 +8,7 @@
     app:cardCornerRadius="0dp">
 
     <LinearLayout
-        android:id="@+id/ll_recyclerViewlayout"
+        android:id="@+id/ll_recyclerViewLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -150,14 +150,15 @@
                 style="@style/TextViewAppearanceRecyclerViewDetail"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginEnd="40dp"
+                android:layout_marginBottom="1dp"
                 android:ellipsize="end"
                 android:maxLines="1"
                 android:text="@string/email_smartgig"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_emailIdHeading"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@id/tv_employeeIdDetail"
-                app:layout_constraintTop_toBottomOf="@id/tv_employeeIdDetail" />
+                app:layout_constraintTop_toTopOf="@+id/tv_emailIdHeading" />
 
             <TextView
                 android:id="@+id/tv_dojHeading"
@@ -175,13 +176,13 @@
                 style="@style/TextViewAppearanceRecyclerViewDetail"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginEnd="40dp"
                 android:ellipsize="end"
-                android:text="@string/date_format"
+                android:text="@string/date_1"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_dojHeading"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@id/tv_emailIdDetail"
-                app:layout_constraintTop_toBottomOf="@id/tv_emailIdDetail" />
+                app:layout_constraintTop_toTopOf="@+id/tv_dojHeading" />
 
             <TextView
                 android:id="@+id/tv_designationHeading"
@@ -199,13 +200,13 @@
                 style="@style/TextViewAppearanceRecyclerViewDetail"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginEnd="40dp"
                 android:ellipsize="end"
                 android:text="@string/project_manager"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_designationHeading"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@id/tv_dojDetail"
-                app:layout_constraintTop_toBottomOf="@id/tv_dojDetail" />
+                app:layout_constraintTop_toTopOf="@+id/tv_designationHeading" />
 
             <TextView
                 android:id="@+id/tv_workLocationHeading"
@@ -223,13 +224,13 @@
                 style="@style/TextViewAppearanceRecyclerViewDetail"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginEnd="40dp"
                 android:ellipsize="end"
                 android:text="@string/bangalore"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_workLocationHeading"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@id/tv_designationDetail"
-                app:layout_constraintTop_toBottomOf="@id/tv_designationDetail" />
+                app:layout_constraintTop_toTopOf="@+id/tv_workLocationHeading" />
 
             <TextView
                 android:id="@+id/tv_phoneNumHeading"
@@ -250,13 +251,13 @@
                 style="@style/TextViewAppearanceRecyclerViewDetail"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginEnd="40dp"
                 android:ellipsize="end"
                 android:text="@string/phone_number"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_phoneNumHeading"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@id/tv_workLocationDetail"
-                app:layout_constraintTop_toBottomOf="@id/tv_workLocationDetail" />
+                app:layout_constraintTop_toTopOf="@+id/tv_phoneNumHeading" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

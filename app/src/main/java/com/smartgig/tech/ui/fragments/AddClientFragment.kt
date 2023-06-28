@@ -33,7 +33,7 @@ class AddClientFragment : Fragment() {
         }
 
         binding.layoutAddClient.layoutLayoutType.tvScreenTypeHeading.text = R.string.client.toString()
-        binding.layoutAddClient.layoutLayoutType.sivScreenTypeLogo.setImageResource(R.drawable.ic_download)
+        binding.layoutAddClient.layoutLayoutType.sivScreenTypeLogo.setImageResource(R.drawable.ic_project)
 
     }
 

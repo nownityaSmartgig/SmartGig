@@ -31,7 +31,7 @@ class AddClientProjectFragment : Fragment() {
         super.onViewCreated(view , savedInstanceState)
 
         binding.layoutAddClientProject.layoutLayoutType.tvScreenTypeHeading.text = R.string.project.toString()
-        binding.layoutAddClientProject.layoutLayoutType.sivScreenTypeLogo.setImageResource(R.drawable.ic_download)
+        binding.layoutAddClientProject.layoutLayoutType.sivScreenTypeLogo.setImageResource(R.drawable.ic_project)
 
         val popupButton = binding.layoutTopBoard.ivDownCaret
 

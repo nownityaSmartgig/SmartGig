@@ -31,7 +31,7 @@ class AddEmployeeFragment : Fragment() {
         super.onViewCreated(view , savedInstanceState)
 
         binding.layoutAddEmployeeDetails.layoutLayoutType.tvScreenTypeHeading.text = R.string.employee_details.toString()
-        binding.layoutAddEmployeeDetails.layoutLayoutType.sivScreenTypeLogo.setImageResource(R.drawable.ic_download)
+        binding.layoutAddEmployeeDetails.layoutLayoutType.sivScreenTypeLogo.setImageResource(R.drawable.ic_employees_detail)
 
         val popupButton = binding.layoutTopBoard.ivDownCaret
 
