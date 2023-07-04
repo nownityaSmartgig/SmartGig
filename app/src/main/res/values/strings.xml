@@ -7,6 +7,12 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
+    <!--    login activity-->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login"><font color="#FFFFFF">Login</font></string>
+
+
     <!--    string for topBoard-->
 
     <string name="user_name">Mahesh Nayani</string>
@@ -72,7 +78,6 @@
     <string name="start_date_colon">Start Date:</string>
     <string name="status_colon">Status:</string>
     <string name="log_out">Log out</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!--    string for Apply Leave-->
@@ -101,5 +106,29 @@
     <string name="paid_unpaid_details">Paid</string>
     <string name="status_details">Pending</string>
     <string name="leave_request_type">Leave Request</string>
+
+
+    //String Pop_up_menu
+
+    <string name="admin_access_popup">Admin Access</string>
+    <string name="add_employee_document_popup">Add Employee Document</string>
+    <string name="apply_leave_popup">Apply Leave</string>
+    <string name="assigned_project_popup">Assigned Project</string>
+
+
+    //layout admin Access
+    <string name="assign_role">Assign Role</string>
+    <string name="employee_name">Employee Name<font color="#ff5566">*</font></string>
+    <string name="search_and_select_employee">Search and select employee</string>
+    <string name="role">Role<font color="#ff5566">*</font></string>
+    <string name="admin">Admin</string>
+    <string name="super_admin">Super Admin</string>
+    <string name="assign">Assign</string>
+
+    //rv_layout_admin
+    <string name="email_id_colon">Email Id:</string>
+    <string name="email_smartgig">xyz@smartgig.tech</string>
+    <string name="designation_colon">Designation:</string>
+    <string name="role_colon">Role:</string>
 
 </resources>

@@ -60,6 +60,14 @@
         <item name="android:textColor">@color/black2</item>
     </style>
 
+    <style name="TextViewAdminAccessGroup">
+        <item name="android:textColor">@color/gunmetal</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="android:letterSpacing">-0.044</item>
+    </style>
+
+
 
 
 </resources>

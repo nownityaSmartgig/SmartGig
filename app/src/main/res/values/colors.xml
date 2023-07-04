@@ -11,4 +11,7 @@
     <color name="black2">#000000</color>
     <color name="gunmetal">#252F40</color>
     <color name="anti_flash_white">#F0F0F0</color>
+    <color name="light_orange">#F38211</color>
+    <color name="light_gray">#D9D9D9</color>
+
 </resources>

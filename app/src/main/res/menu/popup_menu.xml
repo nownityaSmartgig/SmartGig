@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/popup_admin_access"
+        android:title="@string/admin_access_popup" />
+    <item
+        android:id="@+id/popup_add_employee_document"
+        android:title="@string/add_employee_document_popup" />
+    <item
+        android:id="@+id/popup_apply_leave"
+        android:title="@string/apply_leave_popup" />
+    <item
+        android:id="@+id/popup_assigned_project"
+        android:title="@string/assigned_project_popup" />
+
+</menu>

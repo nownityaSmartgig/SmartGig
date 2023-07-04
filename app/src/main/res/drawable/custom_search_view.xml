@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Empty space (padding) on the right side -->
+    <item
+        android:drawable="@android:color/transparent"
+        android:right="8dp" />
+
+    <!-- Search icon aligned to the right side -->
+    <item
+        android:drawable="@drawable/ic_search_view_icon"
+        android:gravity="right|center_vertical" />
+</layer-list>
