@@ -18,14 +18,14 @@ import java.util.Calendar
 
 
 class AssignedProjectFragment : Fragment() {
-    private lateinit var binding:FragmentAssignedProjectBinding
+    private lateinit var binding: FragmentAssignedProjectBinding
 
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentAssignedProjectBinding.inflate(inflater,container,false)
+        binding = FragmentAssignedProjectBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -37,22 +37,22 @@ class AssignedProjectFragment : Fragment() {
             showPopupMenu(it)
         }
 
-        val logOutButton=binding.layoutLogoutButton.tvLogoutHeading
+        val logOutButton = binding.layoutLogoutButton.tvLogoutHeading
 
-        logOutButton.setOnClickListener{
+        logOutButton.setOnClickListener {
             jumpToLoginActivity()
         }
 
-        val datePicker=binding.layoutAssignProject.etOnboardingDate
-        datePicker.setOnClickListener{
+        val datePicker = binding.layoutAssignProject.etOnboardingDate
+        datePicker.setOnClickListener {
             showDatePickerDialog()
         }
     }
 
     private fun showPopupMenu(view: View?) {
-        val popupMenu = PopupMenu(requireContext() , view)
+        val popupMenu = PopupMenu(requireContext(), view)
         popupMenu.inflate(R.menu.popup_menu)
-        popupMenu.setOnMenuItemClickListener { menuItem->
+        popupMenu.setOnMenuItemClickListener { menuItem ->
             handleMenuItemClick(menuItem)
             true
         }
@@ -78,9 +78,44 @@ class AssignedProjectFragment : Fragment() {
                 findNavController().navigate(action)
             }
 
-            R.id.popup_apply_leave-> {
+            R.id.popup_apply_leave -> {
                 val action =
                     AssignedProjectFragmentDirections.actionAssignedProjectFragmentToApplyLeaveFragment()
+                findNavController().navigate(action)
+            }
+
+            R.id.popup_addEmployee -> {
+                val action =
+                    AssignedProjectFragmentDirections.actionAssignedProjectFragmentToAddEmployeeFragment()
+                findNavController().navigate(action)
+            }
+
+            R.id.popup_employeeList -> {
+                val action =
+                    AssignedProjectFragmentDirections.actionAssignedProjectFragmentToEmployeeListFragment()
+                findNavController().navigate(action)
+            }
+
+            R.id.popup_addClient -> {
+                val action =
+                    AssignedProjectFragmentDirections.actionAssignedProjectFragmentToAddClientFragment()
+                findNavController().navigate(action)
+            }
+
+            R.id.popup_addClientProject -> {
+                val action =
+                    AssignedProjectFragmentDirections.actionAssignedProjectFragmentToAddClientProjectFragment()
+                findNavController().navigate(action)
+            }
+
+            R.id.popup_pieChart -> {
+                val action =
+                    AssignedProjectFragmentDirections.actionAssignedProjectFragmentToPieChartFragment()
+                findNavController().navigate(action)
+            }
+            R.id.popup_paySlip->{
+                val action=
+                    AssignedProjectFragmentDirections.actionAssignedProjectFragmentToPaySlipFragment()
                 findNavController().navigate(action)
             }
         }
@@ -101,7 +136,8 @@ class AssignedProjectFragment : Fragment() {
         val datePickerDialog = DatePickerDialog(
             requireContext(),
             { _, selectedYear, selectedMonth, selectedDay ->
-                val formattedDate = String.format("%02d-%02d-%04d", selectedDay, selectedMonth + 1, selectedYear)
+                val formattedDate =
+                    String.format("%02d-%02d-%04d", selectedDay, selectedMonth + 1, selectedYear)
                 binding.layoutAssignProject.etOnboardingDate.setText(formattedDate)
             },
             year,
@@ -110,15 +146,6 @@ class AssignedProjectFragment : Fragment() {
         )
         datePickerDialog.show()
     }
-
-
-
-
-
-
-
-
-
 
 
 }

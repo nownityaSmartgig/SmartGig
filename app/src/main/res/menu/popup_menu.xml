@@ -13,5 +13,23 @@
     <item
         android:id="@+id/popup_assigned_project"
         android:title="@string/assigned_project_popup" />
+    <item
+        android:id="@+id/popup_addEmployee"
+        android:title="@string/add_employee_popup" />
+    <item
+        android:id="@+id/popup_addClient"
+        android:title="@string/add_client_popup" />
+    <item
+        android:id="@+id/popup_addClientProject"
+        android:title="@string/add_client_project_popup" />
+    <item
+        android:id="@+id/popup_employeeList"
+        android:title="@string/employee_list_popup" />
+    <item
+        android:id="@+id/popup_pieChart"
+        android:title="@string/pie_chart_popup" />
+    <item
+        android:id="@+id/popup_paySlip"
+        android:title="@string/pay_slip_popup" />
 
 </menu>

@@ -20,6 +20,26 @@
         <action
             android:id="@+id/action_adminAccessFragment_to_applyLeaveFragment"
             app:destination="@id/applyLeaveFragment" />
+        <action
+            android:id="@+id/action_adminAccessFragment_to_addClientProjectFragment"
+            app:destination="@id/addClientProjectFragment" />
+        <action
+            android:id="@+id/action_adminAccessFragment_to_employeeListFragment"
+            app:destination="@id/employeeListFragment" />
+        <action
+            android:id="@+id/action_adminAccessFragment_to_addClientFragment"
+            app:destination="@id/addClientFragment" />
+        <action
+            android:id="@+id/action_adminAccessFragment_to_pieChartFragment"
+            app:destination="@id/pieChartFragment" />
+        <action
+            android:id="@+id/action_adminAccessFragment_to_addEmployeeFragment"
+            app:destination="@id/addEmployeeFragment" />
+        <action
+            android:id="@+id/action_adminAccessFragment_to_paySlipFragment"
+            app:destination="@id/paySlipFragment" />
+
+
     </fragment>
     <fragment
         android:id="@+id/addEmployeeDocumentFragment"
@@ -35,9 +55,27 @@
         <action
             android:id="@+id/action_addEmployeeDocumentFragment_to_applyLeaveFragment"
             app:destination="@id/applyLeaveFragment" />
+        <action
+            android:id="@+id/action_addEmployeeDocumentFragment_to_addClientFragment"
+            app:destination="@id/addClientFragment" />
+        <action
+            android:id="@+id/action_addEmployeeDocumentFragment_to_employeeListFragment"
+            app:destination="@id/employeeListFragment" />
+        <action
+            android:id="@+id/action_addEmployeeDocumentFragment_to_pieChartFragment"
+            app:destination="@id/pieChartFragment" />
+        <action
+            android:id="@+id/action_addEmployeeDocumentFragment_to_addClientProjectFragment"
+            app:destination="@id/addClientProjectFragment" />
+        <action
+            android:id="@+id/action_addEmployeeDocumentFragment_to_addEmployeeFragment"
+            app:destination="@id/addEmployeeFragment" />
+        <action
+            android:id="@+id/action_addEmployeeDocumentFragment_to_paySlipFragment"
+            app:destination="@id/paySlipFragment" />
+
+
     </fragment>
-
-
 
     <fragment
         android:id="@+id/assignedProjectFragment"
@@ -54,13 +92,32 @@
         <action
             android:id="@+id/action_assignedProjectFragment_to_applyLeaveFragment"
             app:destination="@id/applyLeaveFragment" />
+        <action
+            android:id="@+id/action_assignedProjectFragment_to_employeeListFragment"
+            app:destination="@id/employeeListFragment" />
+        <action
+            android:id="@+id/action_assignedProjectFragment_to_addClientFragment"
+            app:destination="@id/addClientFragment" />
+        <action
+            android:id="@+id/action_assignedProjectFragment_to_addClientProjectFragment"
+            app:destination="@id/addClientProjectFragment" />
+        <action
+            android:id="@+id/action_assignedProjectFragment_to_addEmployeeFragment"
+            app:destination="@id/addEmployeeFragment" />
+        <action
+            android:id="@+id/action_assignedProjectFragment_to_pieChartFragment"
+            app:destination="@id/pieChartFragment" />
+        <action
+            android:id="@+id/action_assignedProjectFragment_to_paySlipFragment"
+            app:destination="@id/paySlipFragment" />
+
 
     </fragment>
     <fragment
         android:id="@+id/applyLeaveFragment"
         android:name="com.smartgig.tech.ui.fragment.ApplyLeaveFragment"
         android:label="fragment_apply_leave"
-        tools:layout="@layout/fragment_apply_leave" >
+        tools:layout="@layout/fragment_apply_leave">
 
         <action
             android:id="@+id/action_applyLeaveFragment_to_adminAccessFragment"
@@ -71,5 +128,233 @@
         <action
             android:id="@+id/action_applyLeaveFragment_to_assignedProjectFragment"
             app:destination="@id/assignedProjectFragment" />
+        <action
+            android:id="@+id/action_applyLeaveFragment_to_employeeListFragment"
+            app:destination="@id/employeeListFragment" />
+        <action
+            android:id="@+id/action_applyLeaveFragment_to_addClientProjectFragment"
+            app:destination="@id/addClientProjectFragment" />
+        <action
+            android:id="@+id/action_applyLeaveFragment_to_addClientFragment"
+            app:destination="@id/addClientFragment" />
+        <action
+            android:id="@+id/action_applyLeaveFragment_to_addEmployeeFragment"
+            app:destination="@id/addEmployeeFragment" />
+        <action
+            android:id="@+id/action_applyLeaveFragment_to_pieChartFragment"
+            app:destination="@id/pieChartFragment" />
+        <action
+            android:id="@+id/action_applyLeaveFragment_to_paySlipFragment"
+            app:destination="@id/paySlipFragment" />
+
     </fragment>
+
+    <fragment
+        android:id="@+id/addEmployeeFragment"
+        android:name="com.smartgig.tech.ui.fragment.AddEmployeeFragment"
+        android:label="fragment_add_employee"
+        tools:layout="@layout/fragment_add_employee">
+        <action
+            android:id="@+id/action_addEmployeeFragment_to_employeeListFragment"
+            app:destination="@id/employeeListFragment" />
+        <action
+            android:id="@+id/action_addEmployeeFragment_to_adminAccessFragment"
+            app:destination="@id/adminAccessFragment" />
+        <action
+            android:id="@+id/action_addEmployeeFragment_to_addClientFragment"
+            app:destination="@id/addClientFragment" />
+        <action
+            android:id="@+id/action_addEmployeeFragment_to_addClientProjectFragment"
+            app:destination="@id/addClientProjectFragment" />
+        <action
+            android:id="@+id/action_addEmployeeFragment_to_pieChartFragment"
+            app:destination="@id/pieChartFragment" />
+        <action
+            android:id="@+id/action_addEmployeeFragment_to_applyLeaveFragment"
+            app:destination="@id/applyLeaveFragment" />
+        <action
+            android:id="@+id/action_addEmployeeFragment_to_assignedProjectFragment"
+            app:destination="@id/assignedProjectFragment" />
+        <action
+            android:id="@+id/action_addEmployeeFragment_to_addEmployeeDocumentFragment"
+            app:destination="@id/addEmployeeDocumentFragment" />
+        <action
+            android:id="@+id/action_addEmployeeFragment_to_paySlipFragment"
+            app:destination="@id/paySlipFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/employeeListFragment"
+        android:name="com.smartgig.tech.ui.fragment.EmployeeListFragment"
+        android:label="fragment_employee_list"
+        tools:layout="@layout/fragment_employee_list">
+        <action
+            android:id="@+id/action_employeeListFragment_to_addEmployeeFragment"
+            app:destination="@id/addEmployeeFragment" />
+        <action
+            android:id="@+id/action_employeeListFragment_to_adminAccessFragment"
+            app:destination="@id/adminAccessFragment" />
+        <action
+            android:id="@+id/action_employeeListFragment_to_addClientFragment"
+            app:destination="@id/addClientFragment" />
+        <action
+            android:id="@+id/action_employeeListFragment_to_pieChartFragment"
+            app:destination="@id/pieChartFragment" />
+        <action
+            android:id="@+id/action_employeeListFragment_to_addClientProjectFragment"
+            app:destination="@id/addClientProjectFragment" />
+        <action
+            android:id="@+id/action_employeeListFragment_to_addEmployeeDocumentFragment"
+            app:destination="@id/addEmployeeDocumentFragment" />
+        <action
+            android:id="@+id/action_employeeListFragment_to_assignedProjectFragment"
+            app:destination="@id/assignedProjectFragment" />
+        <action
+            android:id="@+id/action_employeeListFragment_to_applyLeaveFragment"
+            app:destination="@id/applyLeaveFragment" />
+        <action
+            android:id="@+id/action_employeeListFragment_to_paySlipFragment"
+            app:destination="@id/paySlipFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/addClientFragment"
+        android:name="com.smartgig.tech.ui.fragment.AddClientFragment"
+        android:label="fragment_add_client"
+        tools:layout="@layout/fragment_add_client">
+        <action
+            android:id="@+id/action_addClientFragment_to_addClientProjectFragment"
+            app:destination="@id/addClientProjectFragment" />
+        <action
+            android:id="@+id/action_addClientFragment_to_pieChartFragment"
+            app:destination="@id/pieChartFragment" />
+        <action
+            android:id="@+id/action_addClientFragment_to_employeeListFragment"
+            app:destination="@id/employeeListFragment" />
+        <action
+            android:id="@+id/action_addClientFragment_to_adminAccessFragment"
+            app:destination="@id/adminAccessFragment" />
+        <action
+            android:id="@+id/action_addClientFragment_to_addEmployeeFragment"
+            app:destination="@id/addEmployeeFragment" />
+        <action
+            android:id="@+id/action_addClientFragment_to_addEmployeeDocumentFragment"
+            app:destination="@id/addEmployeeDocumentFragment" />
+        <action
+            android:id="@+id/action_addClientFragment_to_assignedProjectFragment"
+            app:destination="@id/assignedProjectFragment" />
+        <action
+            android:id="@+id/action_addClientFragment_to_applyLeaveFragment"
+            app:destination="@id/applyLeaveFragment" />
+        <action
+            android:id="@+id/action_addClientFragment_to_paySlipFragment"
+            app:destination="@id/paySlipFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/addClientProjectFragment"
+        android:name="com.smartgig.tech.ui.fragment.AddClientProjectFragment"
+        android:label="fragment_add_client_project"
+        tools:layout="@layout/fragment_add_client_project">
+        <action
+            android:id="@+id/action_addClientProjectFragment_to_addEmployeeFragment"
+            app:destination="@id/addEmployeeFragment" />
+        <action
+            android:id="@+id/action_addClientProjectFragment_to_pieChartFragment"
+            app:destination="@id/pieChartFragment" />
+        <action
+            android:id="@+id/action_addClientProjectFragment_to_addClientFragment"
+            app:destination="@id/addClientFragment" />
+        <action
+            android:id="@+id/action_addClientProjectFragment_to_adminAccessFragment"
+            app:destination="@id/adminAccessFragment" />
+        <action
+            android:id="@+id/action_addClientProjectFragment_to_employeeListFragment"
+            app:destination="@id/employeeListFragment" />
+        <action
+            android:id="@+id/action_addClientProjectFragment_to_addEmployeeDocumentFragment"
+            app:destination="@id/addEmployeeDocumentFragment" />
+        <action
+            android:id="@+id/action_addClientProjectFragment_to_assignedProjectFragment"
+            app:destination="@id/assignedProjectFragment" />
+        <action
+            android:id="@+id/action_addClientProjectFragment_to_applyLeaveFragment"
+            app:destination="@id/applyLeaveFragment" />
+        <action
+            android:id="@+id/action_addClientFragment_to_paySlipFragment"
+            app:destination="@id/paySlipFragment"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/pieChartFragment"
+        android:name="com.smartgig.tech.ui.fragment.PieChartFragment"
+        android:label="fragment_pie_chart"
+        tools:layout="@layout/fragment_pie_chart">
+        <action
+            android:id="@+id/action_pieChartFragment_to_adminAccessFragment"
+            app:destination="@id/adminAccessFragment" />
+        <action
+            android:id="@+id/action_pieChartFragment_to_employeeListFragment"
+            app:destination="@id/employeeListFragment" />
+        <action
+            android:id="@+id/action_pieChartFragment_to_addClientProjectFragment"
+            app:destination="@id/addClientProjectFragment" />
+        <action
+            android:id="@+id/action_pieChartFragment_to_addClientFragment"
+            app:destination="@id/addClientFragment" />
+        <action
+            android:id="@+id/action_pieChartFragment_to_addEmployeeFragment"
+            app:destination="@id/addEmployeeFragment" />
+        <action
+            android:id="@+id/action_pieChartFragment_to_addEmployeeDocumentFragment2"
+            app:destination="@id/addEmployeeDocumentFragment" />
+        <action
+            android:id="@+id/action_pieChartFragment_to_applyLeaveFragment"
+            app:destination="@id/applyLeaveFragment" />
+        <action
+            android:id="@+id/action_pieChartFragment_to_assignedProjectFragment"
+            app:destination="@id/assignedProjectFragment" />
+        <action
+            android:id="@+id/action_pieChartFragment_to_paySlipFragment"
+            app:destination="@id/paySlipFragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/paySlipFragment"
+        android:name="com.smartgig.tech.ui.fragment.PaySlipFragment"
+        android:label="fragment_pay_slip"
+        tools:layout="@layout/fragment_pay_slip">
+
+
+        <action
+            android:id="@+id/action_paySlipFragment_to_addEmployeeFragment"
+            app:destination="@id/addEmployeeFragment" />
+        <action
+            android:id="@+id/action_paySlipFragment_to_pieChartFragment"
+            app:destination="@id/pieChartFragment" />
+        <action
+            android:id="@+id/action_paySlipFragment_to_addClientFragment"
+            app:destination="@id/addClientFragment" />
+        <action
+            android:id="@+id/action_paySlipFragment_to_addClientProjectFragment"
+            app:destination="@id/addClientProjectFragment" />
+        <action
+            android:id="@+id/action_paySlipFragment_to_adminAccessFragment"
+            app:destination="@id/adminAccessFragment" />
+        <action
+            android:id="@+id/action_paySlipFragment_to_employeeListFragment"
+            app:destination="@id/employeeListFragment" />
+        <action
+            android:id="@+id/action_paySlipFragment_to_assignedProjectFragment"
+            app:destination="@id/assignedProjectFragment" />
+        <action
+            android:id="@+id/action_paySlipFragment_to_applyLeaveFragment"
+            app:destination="@id/applyLeaveFragment" />
+        <action
+            android:id="@+id/action_paySlipFragment_to_addEmployeeDocumentFragment"
+            app:destination="@id/addEmployeeDocumentFragment" />
+    </fragment>
+
 </navigation>

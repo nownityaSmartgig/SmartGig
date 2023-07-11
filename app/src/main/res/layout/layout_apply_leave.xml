@@ -356,7 +356,7 @@
                     app:layout_constraintEnd_toEndOf="parent">
 
                     <include
-                        android:id="@+id/layout_leave_reques"
+                        android:id="@+id/layout_leave_request"
                         layout="@layout/layout_leave_request"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"

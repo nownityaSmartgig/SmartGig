@@ -35,6 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/leave_request_type"
+            android:textSize="14sp"
             android:layout_marginHorizontal="8dp"
             app:layout_constraintStart_toEndOf="@id/siv_screenTypeLogo"
             app:layout_constraintTop_toTopOf="parent"
@@ -44,10 +45,10 @@
 
         <ImageView
             android:id="@+id/iv_scDownArrow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
             android:src="@drawable/ic_arrow_down"
-            android:layout_marginEnd="8dp"
+            android:layout_marginEnd="6dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"

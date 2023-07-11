@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <include
+            android:id="@+id/layout_layoutType"
+            layout="@layout/layout_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="20dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_layoutType"
+
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="2dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_employeeIdHeading"
+                    style="@style/TextViewAppearanceHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="38dp"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/employee_id"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_employeeId"
+                    style="@style/EditTextAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="22dp"
+                    android:layout_marginTop="8dp"
+
+                    android:background="@drawable/edit_text_outline_round_corner"
+                    android:hint="@string/enter_your_employee_id"
+                    android:inputType="number"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_employeeIdHeading"
+                    tools:ignore="Autofill" />
+
+                <TextView
+                    android:id="@+id/tv_fullNameHeading"
+                    style="@style/TextViewAppearanceHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="38dp"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/full_name"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/et_employeeId" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_fullName"
+                    style="@style/EditTextAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="22dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edit_text_outline_round_corner"
+                    android:hint="@string/enter_your_full_name"
+                    android:inputType="textPersonName"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_fullNameHeading"
+                    tools:ignore="Autofill," />
+
+                <TextView
+                    android:id="@+id/tv_genderHeading"
+                    style="@style/TextViewAppearanceHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="38dp"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/gender"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/et_fullName" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/sp_gender"
+                    style="@style/EditTextAppearance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/custom_spinner"
+                    android:dropDownHeight="200dp"
+                    android:entries="@array/gender_array"
+                    android:outlineProvider="bounds"
+                    android:overlapAnchor="false"
+                    android:paddingVertical="12dp"
+                    android:paddingStart="6dp"
+                    android:prompt="@string/gender_prompt"
+                    android:spinnerMode="dropdown"
+                    app:layout_constraintEnd_toStartOf="@id/et_dob"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_genderHeading"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/tv_dobHeading"
+                    style="@style/TextViewAppearanceHeading"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/dob"
+
+                    app:layout_constraintStart_toStartOf="@id/et_dob"
+                    app:layout_constraintTop_toBottomOf="@id/et_fullName"
+
+                    />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_dob"
+                    style="@style/EditTextAppearance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="22dp"
+                    android:background="@drawable/edit_text_outline_round_corner"
+                    android:drawableEnd="@drawable/ic_calendar"
+                    android:hint="dd-mm-yyyy"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="12dp"
+                    app:layout_constraintBottom_toBottomOf="@id/sp_gender"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/sp_gender"
+                    app:layout_constraintTop_toTopOf="@id/sp_gender"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_emailIdHeading"
+                    style="@style/TextViewAppearanceHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="38dp"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/email_id"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/sp_gender" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_emailId"
+                    style="@style/EditTextAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="22dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edit_text_outline_round_corner"
+                    android:hint="@string/enter_your_email_id"
+                    android:inputType="textEmailAddress"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_emailIdHeading"
+                    tools:ignore="Autofill" />
+
+                <TextView
+                    android:id="@+id/tv_mobileNumHeading"
+                    style="@style/TextViewAppearanceHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="38dp"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/mobile_no"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/et_emailId" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_mobileNum"
+                    style="@style/EditTextAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="22dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edit_text_outline_round_corner"
+                    android:hint="@string/enter_your_mobile_number"
+                    android:inputType="phone"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_mobileNumHeading"
+                    tools:ignore="Autofill" />
+
+
+                <TextView
+                    android:id="@+id/tv_employeeTypeHeading"
+                    style="@style/TextViewAppearanceHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="38dp"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/employee_type"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/et_mobileNum" />
+
+                <Spinner
+                    android:id="@+id/sp_employeeType"
+                    style="@style/EditTextAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="22dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/custom_spinner"
+                    android:dropDownHeight="200dp"
+                    android:entries="@array/gender_array"
+                    android:outlineProvider="bounds"
+                    android:overlapAnchor="false"
+                    android:paddingVertical="12dp"
+                    android:paddingStart="6dp"
+                    android:prompt="@string/gender_prompt"
+                    android:spinnerMode="dropdown"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_employeeTypeHeading"
+                    tools:ignore=",Autofill,RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/tv_designationHeading"
+                    style="@style/TextViewAppearanceHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="38dp"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/designation"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/sp_employeeType" />
+
+                <Spinner
+                    android:id="@+id/sp_designation"
+                    style="@style/EditTextAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="22dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/custom_spinner"
+                    android:dropDownHeight="200dp"
+                    android:entries="@array/gender_array"
+                    android:outlineProvider="bounds"
+                    android:overlapAnchor="false"
+                    android:paddingVertical="12dp"
+                    android:paddingStart="6dp"
+                    android:prompt="@string/gender_prompt"
+                    android:spinnerMode="dropdown"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_designationHeading"
+                    tools:ignore="Autofill,RtlSymmetry" />
+
+
+                <TextView
+                    android:id="@+id/tv_roleHeading"
+                    style="@style/TextViewAppearanceHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="38dp"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/role"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/sp_designation" />
+
+                <Spinner
+                    android:id="@+id/sp_role"
+                    style="@style/EditTextAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="22dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/custom_spinner"
+                    android:dropDownHeight="200dp"
+                    android:entries="@array/gender_array"
+                    android:outlineProvider="bounds"
+                    android:overlapAnchor="false"
+                    android:paddingVertical="12dp"
+                    android:paddingStart="6dp"
+                    android:prompt="@string/gender_prompt"
+                    android:spinnerMode="dropdown"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_roleHeading"
+                    tools:ignore="Autofill,RtlSymmetry" />
+
+
+                <TextView
+                    android:id="@+id/tv_qualificationHeading"
+                    style="@style/TextViewAppearanceHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="38dp"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/qualification"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/sp_role" />
+
+                <Spinner
+                    android:id="@+id/sp_qualification"
+                    style="@style/EditTextAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="22dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/custom_spinner"
+                    android:dropDownHeight="200dp"
+                    android:entries="@array/gender_array"
+                    android:outlineProvider="bounds"
+                    android:overlapAnchor="false"
+                    android:paddingVertical="12dp"
+                    android:paddingStart="6dp"
+                    android:prompt="@string/gender_prompt"
+                    android:spinnerMode="dropdown"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_qualificationHeading"
+                    tools:ignore="Autofill,RtlSymmetry" />
+
+
+                <TextView
+                    android:id="@+id/tv_primarySkillsHeading"
+                    style="@style/TextViewAppearanceHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="38dp"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/primary_skills"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/sp_qualification" />
+
+                <Spinner
+                    android:id="@+id/sp_primarySkills"
+                    style="@style/EditTextAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="22dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/custom_spinner"
+                    android:dropDownHeight="200dp"
+                    android:entries="@array/gender_array"
+                    android:outlineProvider="bounds"
+                    android:overlapAnchor="false"
+                    android:paddingVertical="12dp"
+                    android:paddingStart="6dp"
+                    android:prompt="@string/gender_prompt"
+                    android:spinnerMode="dropdown"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_primarySkillsHeading"
+                    tools:ignore="Autofill,RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/tv_secondarySkillsHeading"
+                    style="@style/TextViewAppearanceHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="38dp"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/secondary_skills"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/sp_primarySkills" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_secondarySkills"
+                    style="@style/EditTextAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="22dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edit_text_outline_round_corner"
+                    android:hint="@string/enter_your_seconday_skills"
+                    android:inputType="textCapWords"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_secondarySkillsHeading"
+                    tools:ignore="Autofill" />
+
+
+                <TextView
+                    android:id="@+id/tv_primaryLocationHeading"
+                    style="@style/TextViewAppearanceHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="38dp"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/primary_location"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/et_secondarySkills" />
+
+                <Spinner
+                    android:id="@+id/sp_primaryLocation"
+                    style="@style/EditTextAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="22dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/custom_spinner"
+                    android:dropDownHeight="200dp"
+                    android:entries="@array/gender_array"
+                    android:outlineProvider="bounds"
+                    android:overlapAnchor="false"
+                    android:paddingVertical="12dp"
+                    android:paddingStart="6dp"
+                    android:prompt="@string/gender_prompt"
+                    android:spinnerMode="dropdown"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_primaryLocationHeading"
+                    tools:ignore="Autofill,RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/tv_currentLocationHeading"
+                    style="@style/TextViewAppearanceHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="38dp"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/current_location"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/sp_primaryLocation" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_currentLocation"
+                    style="@style/EditTextAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="22dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edit_text_outline_round_corner"
+                    android:hint="@string/enter_your_current_location"
+                    android:inputType="textCapWords"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_currentLocationHeading"
+                    tools:ignore="Autofill" />
+
+
+                <TextView
+                    android:id="@+id/tv_dojHeading"
+                    style="@style/TextViewAppearanceHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="38dp"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/doj"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/et_currentLocation" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_doj"
+                    style="@style/EditTextAppearance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/edit_text_outline_round_corner"
+                    android:drawableEnd="@drawable/ic_calendar"
+                    android:hint="dd-mm-yyyy"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="12dp"
+                    app:layout_constraintEnd_toStartOf="@id/et_dom"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_dojHeading"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/tv_domHeading"
+                    style="@style/TextViewAppearanceHeading"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/dom"
+                    app:layout_constraintStart_toStartOf="@id/et_dom"
+                    app:layout_constraintTop_toBottomOf="@id/et_currentLocation"
+
+                    />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_dom"
+                    style="@style/EditTextAppearance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="22dp"
+                    android:background="@drawable/edit_text_outline_round_corner"
+                    android:drawableEnd="@drawable/ic_calendar"
+                    android:hint="@string/date_format"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="12dp"
+                    app:layout_constraintBottom_toBottomOf="@id/et_doj"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/et_doj"
+                    app:layout_constraintTop_toTopOf="@id/et_doj"
+                    app:layout_goneMarginStart="6dp" />
+
+
+                <TextView
+                    android:id="@+id/tv_lastWorkingDayHeading"
+                    style="@style/TextViewAppearanceHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="38dp"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/last_working_day"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/et_doj" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_lastWorkingDay"
+                    style="@style/EditTextAppearance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/edit_text_outline_round_corner"
+                    android:drawableEnd="@drawable/ic_calendar"
+                    android:hint="dd-mm-yyyy"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="12dp"
+                    app:layout_constraintEnd_toStartOf="@id/et_ctc"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_lastWorkingDayHeading"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/tv_ctcHeading"
+                    style="@style/TextViewAppearanceHeading"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/ctc"
+                    app:layout_constraintStart_toStartOf="@id/et_ctc"
+                    app:layout_constraintTop_toBottomOf="@id/et_dom"
+
+                    />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_ctc"
+                    style="@style/EditTextAppearance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="22dp"
+                    android:background="@drawable/edit_text_outline_round_corner"
+                    android:hint="@string/zero"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="12dp"
+                    app:layout_constraintBottom_toBottomOf="@id/et_lastWorkingDay"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/et_lastWorkingDay"
+                    app:layout_constraintTop_toTopOf="@id/et_lastWorkingDay" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bt_next"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginBottom="23dp"
+                    android:background="@drawable/button_blue_bg"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="Next"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/bt_cancel"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/et_lastWorkingDay"
+
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bt_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="22dp"
+                    android:background="@drawable/button_white_bg_red_corner"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/chinese_black"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/bt_next"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/bt_next"
+                    app:layout_constraintTop_toTopOf="@id/bt_next"
+
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

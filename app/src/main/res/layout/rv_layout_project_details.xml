@@ -7,8 +7,8 @@
     app:cardBackgroundColor="@android:color/transparent"
     app:cardCornerRadius="0dp">
 
-
     <LinearLayout
+        android:id="@+id/ll_recyclerViewLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -24,32 +24,50 @@
 
 
             <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/tv_leave_subject"
+                android:id="@+id/tv_projectName"
                 style="@style/TextViewAppearanceRecyclerView"
-                android:layout_width="120dp"
+                android:layout_width="140dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="18dp"
+                android:layout_marginVertical="14dp"
+                android:layout_marginStart="23dp"
                 android:ellipsize="end"
                 android:maxLines="1"
-                android:text="@string/leave_subject"
+                android:text="@string/project_name_plain"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/tv_status_top_layout"
+                android:id="@+id/tv_clientNameTop"
                 style="@style/TextViewAppearanceRecyclerView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="34dp"
-                android:layout_marginEnd="20dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="10dp"
                 android:ellipsize="end"
                 android:maxLines="1"
-                android:text="@string/status"
+                android:text="@string/infionic"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@id/tv_projectName"
+                app:layout_constraintEnd_toStartOf="@id/iv_edit"
+                app:layout_constraintStart_toEndOf="@id/tv_projectName"
+                app:layout_constraintTop_toTopOf="@id/tv_projectName"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/ic_pencil"
                 android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/iv_caretDown"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+
+                />
+
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/iv_caretDown"
@@ -57,9 +75,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="17dp"
                 android:src="@drawable/ic_arrow_down"
+
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -70,130 +90,91 @@
             android:visibility="visible">
 
             <TextView
-                android:id="@+id/tv_no_0f_days_heading"
+                android:id="@+id/tv_projectDescriptionHeading"
                 style="@style/TextViewAppearanceRecyclerViewHeading"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
+                android:layout_marginStart="22dp"
                 android:layout_marginTop="13dp"
-                android:text="@string/no_of_days_colon"
+                android:text="@string/project_description_colon"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/tv_no_0f_days_details"
-                style="@style/TextViewAppearanceRecyclerViewDetail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="100dp"
-                android:text="10"
-                app:layout_constraintBottom_toBottomOf="@id/tv_no_0f_days_heading"
-                app:layout_constraintStart_toEndOf="@id/tv_no_0f_days_heading"
-                app:layout_constraintTop_toTopOf="@id/tv_no_0f_days_heading" />
-
-            <TextView
-                android:id="@+id/tv_from_date_heading"
-                style="@style/TextViewAppearanceRecyclerViewHeading"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="22dp"
-                android:layout_marginTop="10dp"
-                android:text="@string/from_date_colon"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_no_0f_days_heading" />
-
-            <TextView
-                android:id="@+id/tv_from_date_details"
+                android:id="@+id/tv_projectDescription"
                 style="@style/TextViewAppearanceRecyclerViewDetail"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginStart="35dp"
                 android:layout_marginEnd="40dp"
                 android:ellipsize="end"
                 android:maxLines="1"
-                android:text="20 Nov 2022"
+                android:text="@string/dummy_text"
+                app:layout_constraintBottom_toBottomOf="@id/tv_projectDescriptionHeading"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@id/tv_no_0f_days_details"
-                app:layout_constraintTop_toBottomOf="@id/tv_no_0f_days_details" />
+                app:layout_constraintStart_toEndOf="@id/tv_projectDescriptionHeading"
+                app:layout_constraintTop_toTopOf="@id/tv_projectDescriptionHeading" />
 
             <TextView
-                android:id="@+id/tv_to_date_heading"
+                android:id="@+id/tv_clientNameHeading"
                 style="@style/TextViewAppearanceRecyclerViewHeading"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="22dp"
                 android:layout_marginTop="10dp"
-                android:text="@string/to_date_colon"
+                android:text="@string/client_name_colon"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_from_date_heading" />
+                app:layout_constraintTop_toBottomOf="@id/tv_projectDescriptionHeading"
+
+                />
 
             <TextView
-                android:id="@+id/tv_to_date_details"
+                android:id="@+id/tv_clientName"
                 style="@style/TextViewAppearanceRecyclerViewDetail"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginEnd="40dp"
                 android:ellipsize="end"
-                android:text="@string/to_date_details"
+                android:text="@string/infionic"
+                app:layout_constraintBottom_toBottomOf="@id/tv_clientNameHeading"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@id/tv_from_date_details"
-                app:layout_constraintTop_toBottomOf="@id/tv_from_date_details" />
+                app:layout_constraintStart_toStartOf="@id/tv_projectDescription"
+                app:layout_constraintTop_toTopOf="@id/tv_clientNameHeading"
+
+                />
 
             <TextView
-                android:id="@+id/tv_paid_unpaid_heading"
+                android:id="@+id/tv_statusHeading"
                 style="@style/TextViewAppearanceRecyclerViewHeading"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="22dp"
                 android:layout_marginTop="10dp"
-                android:text="@string/paid_unpaid_heading"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_to_date_details" />
-
-            <TextView
-                android:id="@+id/tv_paid_unpaid_details"
-                style="@style/TextViewAppearanceRecyclerViewDetail"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="40dp"
-                android:ellipsize="end"
-                android:text="@string/paid_unpaid_details"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@id/tv_to_date_details"
-                app:layout_constraintTop_toBottomOf="@id/tv_to_date_details" />
-
-            <TextView
-                android:id="@+id/tv_status_heading"
-                style="@style/TextViewAppearanceRecyclerViewHeading"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="22dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginBottom="9dp"
                 android:text="@string/status_colon"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_paid_unpaid_details" />
+                app:layout_constraintTop_toBottomOf="@id/tv_clientNameHeading"
+
+                />
 
             <TextView
-                android:id="@+id/tv_status_details"
+                android:id="@+id/tv_status"
                 style="@style/TextViewAppearanceRecyclerViewDetail"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginEnd="40dp"
                 android:ellipsize="end"
-                android:text="@string/status_details"
+                android:text="@string/in_progress"
+                app:layout_constraintBottom_toBottomOf="@id/tv_statusHeading"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@id/tv_paid_unpaid_details"
-                app:layout_constraintTop_toBottomOf="@id/tv_paid_unpaid_details" />
+                app:layout_constraintStart_toStartOf="@id/tv_clientName"
+                app:layout_constraintTop_toTopOf="@id/tv_statusHeading"
+
+                />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-
-
     </LinearLayout>
-
 </com.google.android.material.card.MaterialCardView>

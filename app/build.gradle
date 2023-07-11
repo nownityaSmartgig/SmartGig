@@ -54,6 +54,19 @@ dependencies {
 //    implementation 'com.github.evrencoskun:TableView:v0.8.9.4'
 //    implementation 'com.github.sung2063:AndroidTableauLibrary:1.0-rc-2'
 
+    //liveData and ViewModel
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.1'
+
+    // Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.1'
+
+    //coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1'
+
 
     // Chart and graph library
     implementation 'com.github.blackfizz:eazegraph:1.2.5l@aar'
