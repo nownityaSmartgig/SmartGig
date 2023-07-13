@@ -7,17 +7,23 @@ import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import android.widget.PopupMenu
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.RecyclerView
 import com.smartgig.tech.R
 import com.smartgig.tech.databinding.FragmentAdminAccessBinding
 import com.smartgig.tech.databinding.FragmentAssignedProjectBinding
+import com.smartgig.tech.domain.model.Admin
 import com.smartgig.tech.ui.activities.LoginActivity
+import com.smartgig.tech.ui.adapters.recyclerview.MyAdminAdapter
 
 
 class AdminAccessFragment : Fragment() {
 
     private lateinit var binding: FragmentAdminAccessBinding
+    private lateinit var adminRecyclerView: RecyclerView
+    private lateinit var newArrayList: ArrayList<Admin>
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -39,6 +45,22 @@ class AdminAccessFragment : Fragment() {
         logOutButton.setOnClickListener{
             jumpToLoginActivity()
         }
+
+        adminRecyclerView=binding.layoutAdminAccess.adminRecyclerView
+        adminRecyclerView.setHasFixedSize(true)
+
+        newArrayList= arrayListOf<Admin>()
+        val adminObject1=Admin("Mahesh Nayani","Super Admin","xyz@gmail.com","CEO","Active")
+
+        newArrayList.add(adminObject1)
+        newArrayList.add(adminObject1)
+        newArrayList.add(adminObject1)
+        newArrayList.add(adminObject1)
+
+        val adapter=MyAdminAdapter(newArrayList)
+
+        adminRecyclerView.adapter=MyAdminAdapter(newArrayList)
+
 
     }
     private fun showPopupMenu(view: View?) {

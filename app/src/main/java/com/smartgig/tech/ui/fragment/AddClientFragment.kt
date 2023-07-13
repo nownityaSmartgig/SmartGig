@@ -10,16 +10,21 @@ import android.view.ViewGroup
 import android.widget.PopupMenu
 import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.RecyclerView
 import com.smartgig.tech.R
 import com.smartgig.tech.databinding.FragmentAddClientBinding
 import com.smartgig.tech.databinding.FragmentAddEmployeeDocumentsBinding
+import com.smartgig.tech.domain.model.Client
 import com.smartgig.tech.ui.activities.LoginActivity
+import com.smartgig.tech.ui.adapters.recyclerview.MyAddClientAdapter
 import com.smartgig.tech.ui.fragment.AddClientFragmentDirections
 
 
 class AddClientFragment : Fragment() {
 
     private lateinit var binding: FragmentAddClientBinding
+    private lateinit var clientRecyclerView: RecyclerView
+    private lateinit var newArrayList: ArrayList<Client>
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
@@ -41,6 +46,18 @@ class AddClientFragment : Fragment() {
         val type = "Client"
         binding.layoutAddClient.layoutLayoutType.tvScreenTypeHeading.text = type
         binding.layoutAddClient.layoutLayoutType.sivScreenTypeLogo.setImageResource(R.drawable.ic_project)
+
+
+        clientRecyclerView=binding.layoutAddClient.rvClientDetails
+        newArrayList= arrayListOf<Client>()
+        val client1=Client("Joe","Banglore","Active")
+
+        newArrayList.add(client1)
+        newArrayList.add(client1)
+        newArrayList.add(client1)
+
+        val adapter=MyAddClientAdapter(newArrayList)
+        clientRecyclerView.adapter=adapter
 
         val logOutButton = binding.layoutLogoutButton.tvLogoutHeading
 
